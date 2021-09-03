@@ -13,6 +13,7 @@ public class GreetingServer {
         int port = 7000;
         ServerSocket serverSocket = null;
         Socket socket = null;
+        boolean isRunning = true;
 
         try {
             serverSocket = new ServerSocket(port);
@@ -21,9 +22,11 @@ public class GreetingServer {
             DataInputStream dataInputStream = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
             DataOutputStream dataOutputStream = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
 
-            String[] strs = dataInputStream.readUTF().split("--");
-            dataOutputStream.writeUTF(String.format("让我们欢迎来自%s的%s", strs[1], strs[0]));
-            dataOutputStream.flush();
+            while(isRunning) {
+                String[] strs = dataInputStream.readUTF().split("--");
+                dataOutputStream.writeUTF(String.format("让我们欢迎来自%s的%s", strs[1], strs[0]));
+                dataOutputStream.flush();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         } finally {

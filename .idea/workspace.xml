@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36a4496f-9441-409d-8ef2-44a9be4809bf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GreetingServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GreetingServer.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/GreetingServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+            <state relative-caret-position="275">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,7 +90,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -129,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630651706174</updated>
-      <workItem from="1630651709426" duration="2989000" />
+      <workItem from="1630651709426" duration="4964000" />
     </task>
     <task id="LOCAL-00001" summary="新增服务端说明">
       <created>1630651843099</created>
@@ -152,14 +151,22 @@
       <option name="project" value="LOCAL" />
       <updated>1630652368771</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="一次只能进行一次请求">
+      <created>1630654818982</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1630654818982</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2989000" />
+    <option name="totallyTimeSpent" value="4964000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
@@ -198,14 +205,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增服务端说明" />
     <MESSAGE value="新增服务端入口类" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增服务端入口类" />
+    <MESSAGE value="一次只能进行一次请求" />
+    <option name="LAST_COMMIT_MESSAGE" value="一次只能进行一次请求" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="17" selection-start-column="17" selection-end-column="17" />
+          <first_editor relative-caret-position="75">
+            <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
           </first_editor>
           <second_editor />
         </state>
@@ -213,8 +221,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/GreetingServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="24" column="69" selection-start-line="24" selection-start-column="69" selection-end-line="24" selection-end-column="69" />
+        <state relative-caret-position="275">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
