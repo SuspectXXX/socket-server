@@ -12,10 +12,11 @@ public class GreetingServer {
 
         int port = 7000;
         ServerSocket serverSocket = null;
+        Socket socket = null;
 
         try {
             serverSocket = new ServerSocket(port);
-            Socket socket = serverSocket.accept();
+            socket = serverSocket.accept();
 
             DataInputStream dataInputStream = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
             DataOutputStream dataOutputStream = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
@@ -28,6 +29,14 @@ public class GreetingServer {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
+            try {
+                if(socket != null) {
+                    socket.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
             try {
                 if(serverSocket != null) {
                     serverSocket.close();
