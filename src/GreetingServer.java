@@ -21,10 +21,8 @@ public class GreetingServer {
             DataInputStream dataInputStream = new DataInputStream(new BufferedInputStream(socket.getInputStream()));
             DataOutputStream dataOutputStream = new DataOutputStream(new BufferedOutputStream(socket.getOutputStream()));
 
-            System.out.println(dataInputStream.readUTF());
-
-//            System.out.println(String.format("欢迎来自%s的%s", dataInputStream.readUTF()));
-            dataOutputStream.writeChars("你好");
+            String[] strs = dataInputStream.readUTF().split("--");
+            dataOutputStream.writeUTF(String.format("让我们欢迎来自%s的%s", strs[1], strs[0]));
             dataOutputStream.flush();
         } catch (IOException e) {
             e.printStackTrace();
